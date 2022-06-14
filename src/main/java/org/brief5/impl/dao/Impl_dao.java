@@ -117,8 +117,8 @@ public class Impl_dao implements Dao_candidat{
 			String query = "Update candidat set nom =? where id_cd=?;";
 			PreparedStatement preparedStmt = cn.prepareStatement(query);
      		
-			preparedStmt.setInt(1, id_cd);
-			preparedStmt.setString(2, nom);
+			preparedStmt.setInt(2, id_cd);
+			preparedStmt.setString(1, nom);
 			preparedStmt.executeUpdate();
 			// cn.close();
 
